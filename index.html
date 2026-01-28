@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <!-- fontawesome cdn  -->
     <link
       rel="stylesheet"
@@ -70,14 +74,42 @@
         </div>
       </section>
     </nav>
-    <!-- dummy div  -->
-    <div>
-      <br><br><br><br><br><br><br><br><br><br>
+    <!-- Hero section  -->
+    <div class="hero">
+      <div class="slides">
+        <div class="slide active" style="background: url(image/slide1.jpeg);">
+          <h1>Error 404: <span>Kaapi Not Found</span></h1>
+          <p>
+            Welcome to a place where worries timeout and strong filter coffee
+            loads instantly. Sit back. Sip slow. Feel at home.
+          </p>
+          <a href="#"><button>Order Kaapi</button></a>
+        </div>
+        <div class="slide" style="background: url(image/slide2.jpg);">
+          <h1>---The Coffee Story</h1>
+          <p>
+            Handpicked beans, slow brewing, and a whole lot of love in every
+            cup. Because good coffee doesn’t rush you.
+          </p>
+          <a href="#"><button>View Menu</button></a>
+        </div>
+
+        <div class="slide" style="background: url(image/slide3.jpg);">
+          <h1>More Than Coffee. It’s a Pause.</h1>
+          <p>
+            Come for the kaapi. Stay for the conversations, the silence, and the
+            second cup.
+          </p>
+          <a href="#"><button>Find Us</button></a>
+        </div>
+      </div>
+      <button class="prev">❮</button>
+      <button class="next">❯</button>
     </div>
     <!-- footer  -->
-    <div class="footer">
+    <footer class="footer">
       <section class="foot-logo">
-        <img src="./image/logo-transparent-png.png" alt="" />
+        <img src="image/logo-transparent-png.png" alt="" />
         <div class="social-handles">
           <i
             class="fa-brands fa-square-facebook fa-2xl"
@@ -93,7 +125,10 @@
           <h2>CONTACT</h2>
           <p>no.12, dubai main road,</p>
           <p>Dubai kurukku santhu,</p>
-          <p>dubai. <br> <span style="color: #4a342a;">call - (+91) 1234567890</span></p>
+          <p>
+            dubai. <br />
+            <span style="color: #4a342a">call - (+91) 1234567890</span>
+          </p>
         </div>
         <div class="email">
           <p>Join our mailing list for updates.</p>
@@ -105,15 +140,24 @@
         </div>
         <div class="timing">
           <h2>TIMING</h2>
-          <p><span style="color: #4a342a;">Mon-Fri:</span> 11am - 1am</p>
-          <p><span style="color: #4a342a;">Sat-Sun</span> 11am - 1pm</p>
+          <p><span style="color: #4a342a">Mon-Fri:</span> 11am - 1am</p>
+          <p><span style="color: #4a342a">Sat-Sun</span> 11am - 1pm</p>
         </div>
       </section>
-      <div style="width:100%; height: 2px; background-color: gray; margin-top:1rem;"></div>
+      <div
+        style="
+          width: 100%;
+          height: 2px;
+          background-color: gray;
+          margin-top: 1rem;
+        "
+      ></div>
       <section class="copyright">
-        <p>Copyright &copy; 2026 Error 404:Kaapi not found | All Rights Reserved</p>
+        <p>
+          Copyright &copy; 2026 Error 404:Kaapi not found | All Rights Reserved
+        </p>
         <p>Terms & Conditions Privacy Policy</p>
       </section>
-    </div>
+    </footer>
   </body>
 </html>
