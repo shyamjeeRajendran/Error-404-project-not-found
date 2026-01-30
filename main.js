@@ -16,6 +16,7 @@ x.addEventListener('click',()=>{
 
 const signup = document.querySelector('.signup-back');
 const signBtn = document.querySelector('.sign-up');
+const side_signup = document.querySelector('.signin-side')
 const closeBtn = document.querySelector('.close-btn');
 const submit = document.querySelector('.submit')
 const form = document.querySelector('.signup-form')
@@ -24,9 +25,14 @@ signBtn.addEventListener('click',(e)=>{
   signup.style.display = 'block'
 })
 
+side_signup.addEventListener('click',()=>{
+  signup.style.display = 'block'
+})
+
 closeBtn.addEventListener('click',()=>{
   signup.style.display = 'none'
 })
+
 
 form.addEventListener('submit',(e)=>{
   e.preventDefault()
