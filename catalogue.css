@@ -195,7 +195,7 @@ body {
 .side-menu {
   background-color: #4a342a;
   width: 65%;
-  height: 80vh;
+  height: 100vh;
   position: fixed;
   top: 0;
   right: -100%;
