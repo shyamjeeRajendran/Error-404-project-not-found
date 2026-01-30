@@ -1,8 +1,8 @@
 // sidebar slide 
-const sideMenu = document.querySelector('.side-menu')
-const menu = document.querySelector('.menu-bar')
-const x = document.querySelector('#x-mark')
-const sign_in = document.querySelector('.signin-side')
+const sideMenu = document.querySelector('.side-menu');
+const menu = document.querySelector('.menu-bar');
+const x = document.querySelector('#x-mark');
+const sign_in = document.querySelector('.signin-side');
 
 menu.addEventListener('click',()=>{
  sideMenu.style.right= '0';
@@ -11,6 +11,32 @@ menu.addEventListener('click',()=>{
 x.addEventListener('click',()=>{
     sideMenu.style.right= '-100%';
 })
+
+// sign-up 
+
+const signup = document.querySelector('.signup-back');
+const signBtn = document.querySelector('.sign-up');
+const closeBtn = document.querySelector('.close-btn');
+const submit = document.querySelector('.submit')
+const form = document.querySelector('.signup-form')
+
+signBtn.addEventListener('click',(e)=>{
+  signup.style.display = 'block'
+})
+
+closeBtn.addEventListener('click',()=>{
+  signup.style.display = 'none'
+})
+
+form.addEventListener('submit',(e)=>{
+  e.preventDefault()
+  signup.style.display='none'
+  form.reset()
+})
+
+
+
+
 
 // hero section 
 const slides = document.querySelectorAll('.slide');
@@ -24,19 +50,50 @@ function showSlide(index) {
     if (i === index) slide.classList.add('active');
   });
 }
-
-// Next 
+ 
 function nextSlide() {
   current = (current + 1) % slides.length;
   showSlide(current);
 }
 
-// Previous 
 function prevSlide() {
   current = (current - 1 + slides.length) % slides.length;
   showSlide(current);
 }
-
-// Event listener
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
+
+// reviews
+
+const wrapper = document.querySelector('.review-wrapper');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = dots.length;
+
+let currentIndex = 0;
+let autoSlideInterval; 
+
+function goToSlide(index) {
+  currentIndex = index;
+  const offset = -currentIndex * 100;
+  wrapper.style.transform = `translateX(${offset}%)`;
+  document.querySelector('.dot.active').classList.remove('active');
+  dots[currentIndex].classList.add('active');
+}
+
+
+function nextSlide1() {
+  currentIndex++;
+  if (currentIndex >= totalSlides) {
+    currentIndex = 0;
+  }
+  goToSlide(currentIndex);
+}
+function startAutoSlide() {
+  autoSlideInterval = setInterval(nextSlide1,5000); // 
+}
+ startAutoSlide();
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    goToSlide(index);
+   });
+});

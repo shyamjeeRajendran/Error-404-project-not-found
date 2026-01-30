@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
     <!-- favicon  -->
-    <link rel="icon" href="image/pngwing.com(1).png" />
+    <link rel="icon" href="./image/favicon.png" />
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,13 +45,13 @@
         />
         <div class="menu">
           <a href="#"><p>Home</p></a>
-          <a href="#"><p>Catalog</p></a>
+          <a href="./catalogue.html"><p>Catalog</p></a>
           <a href="#"><p>Gallery</p></a>
           <a href="ourstory.html"><p>Our Story</p></a>
           <a href="#"><p>Reach Us</p></a>
         </div>
         <div class="cart-login">
-          <a href="#" class="sign"><p>sign In</p></a>
+          <a href="#" class="sign sign-up"><p>sign In</p></a>
           <a href="#" class="order"><p>Order online</p></a>
           <span class="menu-bar">
             <i class="fa-solid fa-bars fa-xl" style="color: #4a342a"></i>
@@ -69,15 +69,40 @@
           <a href="#"><p>Gallery</p></a>
           <a href="ourstory.html"><p>Our Story</p></a>
           <a href="#"><p>Reach Us</p></a>
-          <a href="#" class="signin-side"><p>sign In</p></a>
+          <a href="#" class="signin-side sign-up"><p>sign In</p></a>
           <a href="#" class="order-side"><p>Order online</p></a>
+        </div>
+      </section>
+      <section>
+        <div class="signup-back">
+          <div class="signup-box">
+            <div class="signup-title">
+              <h2> </h2>
+              <h2>sign-up</h2>
+              <span class="close-btn"><i class="fa-solid fa-circle-xmark fa-xl" style="color:rgb(112, 46, 46)"></i></span></div>
+            <form action="./index.html" class="signup-form">
+              <label for="name">Name</label>
+              <br>
+              <input type="text" placeholder="Full name" id="username" required>
+              <br>
+              <label for="mail">Email</label>
+              <br>
+              <input type="email" placeholder="Email Address" id="email" required><br>
+              <label for="pass">Password</label>
+              <br>
+              <input type="password" placeholder="Password" id="p-word" required>
+              <br>
+              <button type="submit" class="submit">Register</button>
+            </form>
+            
+          </div>
         </div>
       </section>
     </nav>
     <!-- Hero section  -->
     <div class="hero">
       <div class="slides">
-        <div class="slide active" style="background: url(image/slide1.jpeg);">
+        <div class="slide active" style="background: url(image/slide1.jpeg)">
           <h1>Error 404: <span>Kaapi Not Found</span></h1>
           <p>
             Welcome to a place where worries timeout and strong filter coffee
@@ -85,7 +110,7 @@
           </p>
           <a href="#"><button>Order Kaapi</button></a>
         </div>
-        <div class="slide" style="background: url(image/slide2.jpg);">
+        <div class="slide" style="background: url(image/slide2.jpg)">
           <h1>---The Coffee Story</h1>
           <p>
             Handpicked beans, slow brewing, and a whole lot of love in every
@@ -94,7 +119,7 @@
           <a href="#"><button>View Menu</button></a>
         </div>
 
-        <div class="slide" style="background: url(image/slide3.jpg);">
+        <div class="slide" style="background: url(image/slide3.jpg)">
           <h1>More Than Coffee. It’s a Pause.</h1>
           <p>
             Come for the kaapi. Stay for the conversations, the silence, and the
@@ -105,6 +130,172 @@
       </div>
       <button class="prev">❮</button>
       <button class="next">❯</button>
+    </div>
+    <!-- best sellers  -->
+    <section class="best-sellers">
+      <h1>Error 404: Hunger Found</h1>
+      <p style="color: #4a342a; text-align: center; margin-bottom: 50px">
+        People’s Top Picks
+      </p>
+      <div class="best-items">
+        <div class="bs-item">
+          <div class="img-div">
+            <img src="./image/filter-coffe-bs-1.jpg" alt="image" />
+          </div>
+          <h2>Filter Kaapi (Classic)</h2>
+          <p>Strong. Smooth. South Indian soul.</p>
+          <p>⭐ 4.8 | 💬 120+ reviews</p>
+          <a href="./catalogue.html"><button>Order Before It’s 404</button></a>
+        </div>
+        <div class="bs-item">
+          <div class="img-div">
+            <img src="./image/lava-cake-bs-2.jpg" alt="image" />
+          </div>
+          <h2>Chocolate Lava Cake</h2>
+          <p>Break it once, fall in love forever.</p>
+          <p>⭐ 4.9 | 💬 140+ reviews</p>
+          <a href="./catalogue.html"><button>Add to Plate</button></a>
+        </div>
+        <div class="bs-item">
+          <div class="img-div">
+            <img src="./image/cold-coffee-bs-3.jpg" alt="image" />
+          </div>
+          <h2>Cold Coffee (Creamy)</h2>
+          <p>Chill first. Think later.</p>
+          <p>⭐ 4.6 | 💬 88 reviews</p>
+          <a href="./catalogue.html"><button>Hungry? Fix It</button></a>
+        </div>
+        <div class="bs-item">
+          <div class="img-div">
+            <img src="./image/cookies-bs-4.jpg" alt="image" />
+          </div>
+          <h2>Butter Cookies</h2>
+          <p>One is never enough. Debug responsibly.</p>
+          <p>⭐ 4.5 | 💬 70 reviews</p>
+          <a href="./catalogue.html"><button>Bug-Free Bite</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews  -->
+    <div style="text-align: center" class="review-title">
+      <h1 style="font-size:3rem;">testimonials</h1>
+      <p style="font-size: large;">Error 404: Complaints Not Found</p>
+    </div>
+    <div class="review-container">
+      <div class="review-wrapper">
+        <div class="t-slide">
+          <div class="card">
+            <img src="./image/shyamje.jpeg" alt="User" />
+            <p>"Kaapi here fixed my mood faster than fixing bugs."</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              quas aperiam at similique consequatur odit necessitatibus vero
+              odioipsa quidem.
+            </p>
+            <h4>- Shiyamjee</h4>
+            <span>Web Developer</span>
+          </div>
+        </div>
+        <div class="t-slide">
+          <div class="card">
+            <img src="./image/aruna.jpeg" alt="User" />
+            <p>"Best place to slow down. Coffee + silence = peace."</p>
+             <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              quas aperiam at similique consequatur odit necessitatibus vero
+              odioipsa quidem.
+            </p>
+            <h4>- Aruna</h4>
+            <span>UI Designer</span>
+          </div>
+        </div>
+        <div class="t-slide">
+          <div class="card">
+            <img src="./image/Mine.jpeg" alt="User" />
+            <p>"Their filter kaapi is pure South Indian magic."</p>
+             <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              quas aperiam at similique consequatur odit necessitatibus vero
+              odioipsa quidem.
+            </p>
+            <h4>- Dharshana</h4>
+            <span>Web Developer</span>
+          </div>
+        </div>
+        <div class="t-slide">
+          <div class="card">
+            <img src="./image/shafin.jpeg" alt="User" />
+            <p>"I came for coffee, stayed for the vibe."</p>
+             <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              quas aperiam at similique consequatur odit necessitatibus vero
+              odioipsa quidem.
+            </p>
+            <h4>- Shafin</h4>
+            <span>Content Writer</span>
+          </div>
+        </div>
+        <div class="t-slide">
+          <div class="card">
+            <img src="https://i.pravatar.cc/100?u=2" alt="User" />
+            <p>"Perfect spot to debug life with a cup of kaapi."</p>
+             <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              quas aperiam at similique consequatur odit necessitatibus vero
+              odioipsa quidem.
+            </p>
+            <h4>- Velayutham</h4>
+            <span>product manager</span>
+          </div>
+        </div>
+        <div class="t-slide">
+          <div class="card">
+            <img src="https://i.pravatar.cc/100?u=3" alt="User" />
+            <p>"Kaapi here fixed my mood faster than fixing bugs."</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              quas aperiam at similique consequatur odit necessitatibus vero
+              odioipsa quidem.
+            </p>
+            <h4>- jerlin</h4>
+            <span>Web Developer</span>
+          </div>
+        </div>
+        <div class="t-slide">
+          <div class="card">
+            <img src="https://i.pravatar.cc/100?u=4" alt="User" />
+            <p>"Kaapi here fixed my mood faster than fixing bugs."</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              quas aperiam at similique consequatur odit necessitatibus vero
+              odioipsa quidem.
+            </p>
+            <h4>- marie</h4>
+            <span>Web Developer</span>
+          </div>
+        </div>
+        <div class="t-slide">
+          <div class="card">
+            <img src="https://i.pravatar.cc/100?u=5" alt="User" />
+            <p>"Kaapi here fixed my mood faster than fixing bugs."</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              quas aperiam at similique consequatur odit necessitatibus vero
+              odioipsa quidem.
+            </p>
+            <h4>- mark</h4>
+            <span>Web Developer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+      </div>
     </div>
     <!-- footer  -->
     <footer class="footer">
