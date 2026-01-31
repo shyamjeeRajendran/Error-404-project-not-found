@@ -22,8 +22,6 @@ submit2.addEventListener("click", function () {
   const name = document.getElementById("name")
   const email = document.getElementById("email")
   const phone = document.getElementById("phone")
-  const textarea = document.getElementById("message")
-  const count = document.getElementById("count")
   const error = document.querySelector(".messageerror")
 
   const maxLength = 200;
@@ -66,6 +64,9 @@ submit2.addEventListener("click", function () {
   }
 
 })
+
+const textarea = document.getElementById("message")
+const count = document.getElementById("count")
 
 textarea.addEventListener("input", function () {
   count.innerHTML = textarea.value.length + "/200 characters";
