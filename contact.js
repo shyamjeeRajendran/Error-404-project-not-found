@@ -7,9 +7,9 @@ arrow.addEventListener("click", function () {
   });
 });
 
-var submit = document.querySelector(".submit")
+var submit2 = document.querySelector(".submit2")
 
-submit.addEventListener("click", function () {
+submit2.addEventListener("click", function () {
   event.preventDefault()
 
   let isValid = true;
