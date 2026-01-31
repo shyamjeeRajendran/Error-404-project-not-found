@@ -525,6 +525,13 @@ body {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.submit{
+     border-radius:4px;
+     padding:15x 20px;
+     border:whitesmoke;
+     text-align: end;
+}
+
 .reachus__form input,
 .reachus__form textarea {
   width: 90%;
@@ -599,4 +606,11 @@ body {
 .reachus__form span {
   color: #fef7dc;
   display: none;
+}
+
+/* media queries for mobile */
+@media screen and (max-width: 700px) {
+  .reachus__form {
+  width: 95%;
+}
 }
