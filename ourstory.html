@@ -39,14 +39,14 @@
           alt="Error 404 Kaapi Not Found"
         />
         <div class="menu">
-          <a href="index.html"><p>Home</p></a>
-          <a href="#"><p>Catalog</p></a>
+          <a href="index.html" target="_blank"><p>Home</p></a>
+          <a href="./catalogue.html" target="_blank"><p>Catalog</p></a>
           <a href="#"><p>Gallery</p></a>
-          <a href="#"><p>Our Story</p></a>
-          <a href="#"><p>Reach Us</p></a>
+          <a href="./ourstory.html"><p>Our Story</p></a>
+          <a href="./contact.html"><p>Reach Us</p></a>
         </div>
         <div class="cart-login">
-          <a href="#" class="sign"><p>sign In</p></a>
+          <a href="#" class="sign sign-up"><p>sign In</p></a>
           <a href="#" class="order"><p>Order online</p></a>
           <span class="menu-bar">
             <i class="fa-solid fa-bars fa-xl" style="color: #4a342a"></i>
@@ -59,13 +59,59 @@
           <div id="x-mark">
             <i class="fa-solid fa-circle-xmark fa-xl" style="color: white"></i>
           </div>
-          <a href="index.html"><p>Home</p></a>
-          <a href="#"><p>Catalog</p></a>
+          <a href="index.html" target="_blank"><p>Home</p></a>
+          <a href="./catalogue.html" target="_blank"><p>Catalog</p></a>
           <a href="#"><p>Gallery</p></a>
-          <a href="#"><p>Our Story</p></a>
-          <a href="#"><p>Reach Us</p></a>
+          <a href="./ourstory.html" ><p>Our Story</p></a>
+          <a href="./contact.html"><p>Reach Us</p></a>
           <a href="#" class="signin-side"><p>sign In</p></a>
           <a href="#" class="order-side"><p>Order online</p></a>
+        </div>
+      </section>
+      <!-- sign-up form  -->
+      <section>
+        <div class="signup-back">
+          <div class="signup-box">
+            <div class="signup-title">
+              <h2></h2>
+              <h2>sign-up</h2>
+              <span class="close-btn"
+                ><i
+                  class="fa-solid fa-circle-xmark fa-xl"
+                  style="color: rgb(112, 46, 46)"
+                ></i
+              ></span>
+            </div>
+            <form action="./index.html" class="signup-form">
+              <label for="name">Name</label>
+              <br />
+              <input
+                type="text"
+                placeholder="Full name"
+                id="username"
+                required
+              />
+              <br />
+              <label for="mail">Email</label>
+              <br />
+              <input
+                type="email"
+                placeholder="Email Address"
+                id="email"
+                required
+              /><br />
+              <label for="pass">Password</label>
+              <br />
+              <input
+                type="password"
+                placeholder="Password"
+                id="p-word"
+                required
+              />
+              <br />
+              <button type="submit" class="submit">Register</button>
+            </form>
+          </div>
         </div>
       </section>
     </nav>
