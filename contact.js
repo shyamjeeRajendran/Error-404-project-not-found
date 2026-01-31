@@ -16,7 +16,7 @@ submit2.addEventListener("click", function () {
 
 
   var Regexname = /^[A-Za-z]+$/
-  var Regexemail = /^[A-Za-z0-9]+@gmail\.com$/
+  var Regexemail = /^[a-zA-Z0-9]+@gmail\.com$/
   var Regexphone = /^\d{10}$/
 
   const name = document.getElementById("name")
