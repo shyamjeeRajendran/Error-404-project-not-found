@@ -15,7 +15,6 @@ body {
   background-color: #161515;
   justify-content: space-around;
   align-items: center;
-  /* padding: 0 30px;     */
 }
 
 .nav-container img {
@@ -43,7 +42,6 @@ body {
   display: inline;
   font-weight: bold;
 }
-
 
 .cart-login {
   display: flex;
@@ -81,15 +79,74 @@ body {
 }
 
 .cart-login .menu-bar {
+  display: none;
   border: 2px solid #4a342a;
   border-radius: 5px;
-  padding: 15px 3px;
+  padding: 8px 3px;
 }
 
 .cart-login .menu-bar:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.6s ease-out;
+}
+
+/* sign-up form  */
+.signup-back {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  color: #b26c4b;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.signup-box {
+  background-color: beige;
+  padding: 20px;
+  width: 25%;
+  border-radius: 20px;
+  margin: 20% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 25px;
+  color: rgb(112, 46, 46);
+}
+
+.signup-title .close-btn:hover {
+  cursor: pointer;
+}
+
+.signup-box form input {
+  margin: 10px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: #4a342a 1px solid;
+}
+
+.signup-box form input:focus {
+  outline: none;
+}
+
+.signup-box form button {
+  padding: 8px 10px;
+  background-color: rgb(112, 46, 46);
+  color: beige;
+  border: none;
+  border-radius: 5px;
+}
+
+.signup-box form button:hover {
+  cursor: pointer;
+}
+.signup-title {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* media queries for tablet */
@@ -100,6 +157,12 @@ body {
 
   .cart-login .menu-bar {
     display: flex;
+    padding: 12px 3px;
+  }
+  .signup-box {
+    width: 35%;
+    font-size: 20px;
+    margin: 30% auto;
   }
 }
 
@@ -116,6 +179,11 @@ body {
   .order {
     display: none;
   }
+   .signup-box {
+    width: 90%;
+    font-size: 20px;
+    margin: 260px auto;
+  }
 }
 
 /* side-bar  */
@@ -127,7 +195,7 @@ body {
 .side-menu {
   background-color: #4a342a;
   width: 65%;
-  height: 80vh;
+  height: 100vh;
   position: fixed;
   top: 0;
   right: -100%;
@@ -312,7 +380,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-  
 
 .catalog-card:hover {
   transform: translateY(-10px);
@@ -320,12 +387,11 @@ body {
 
 .catalog-card img {
   width: 100%;
-  height: 180px;        /* remove fixed height */
+  height: 180px; /* remove fixed height */
   aspect-ratio: 4 / 3; /* keeps consistent shape */
   object-fit: cover;
   border-radius: 12px;
 }
-
 
 .catalog-card h3 {
   margin: 1rem 0 0.3rem;
@@ -390,15 +456,13 @@ body {
   min-width: 20px;
   text-align: center;
 }
- /* newly added  */
- .catalog-card .cart-controls button {
-  padding: 0;              /* override large padding */
-  border-radius: 50%;      /* ensure circle */
+/* newly added  */
+.catalog-card .cart-controls button {
+  padding: 0; /* override large padding */
+  border-radius: 50%; /* ensure circle */
   width: 32px;
   height: 32px;
 }
-
-
 
 /* media quries for footer  */
 
@@ -483,7 +547,7 @@ body {
 
   .footer .foot-logo img {
     width: 300px;
-    align-self:baseline;
+    align-self: baseline;
   }
 
   .footer .contact {
@@ -496,10 +560,12 @@ body {
     padding: 0 9%;
   }
 
-  .contact .address, .contact .email, .contact .timing {
+  .contact .address,
+  .contact .email,
+  .contact .timing {
     border-bottom: 1px solid gray;
     border-width: 100%;
-    padding:5px;
+    padding: 5px;
   }
 
   .contact .address {
@@ -514,7 +580,7 @@ body {
 
   .contact .email p {
     color: beige;
-    font-size:18px;
+    font-size: 18px;
     text-align: center;
   }
 
@@ -538,7 +604,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    align-items:center;
+    align-items: center;
     width: 100%;
     color: beige;
     font-size: 1rem;
@@ -564,7 +630,6 @@ body {
 /* ============================= */
 
 @media screen and (max-width: 700px) {
-
   .catalog {
     padding: 1.5rem 4%;
   }
@@ -580,7 +645,7 @@ body {
   }
 
   .catalog-card img {
-    height: 120px;   /* smaller image */
+    height: 120px; /* smaller image */
     object-fit: cover;
   }
 
@@ -603,4 +668,3 @@ body {
     font-size: 0.8rem;
   }
 }
-

@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+     font-family: "Momo Signature", cursive;
+}
+
+.nav-container {
+  display: flex;
+  background-color: #161515;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 0 30px;     */
+}
+
+.nav-container img {
+  width: 310px;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: larger;
+}
+
+.menu a {
+  color: #F7F1E9;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu a:hover {
+  transform: rotate(-1deg) scale(1.1);
+  transition: transform 0.5s ease-out;
+}
+.cart-login span {
+  display: none;
+}
+
+.cart-login {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cart-login .sign {
+  border: 2px solid #4a342a;
+  text-decoration: none;
+  color: #F7F1E9;
+  padding: 8px 13px;
+  font-weight: 500;
+  border-radius: 2rem;
+}
+
+.cart-login .sign:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s ease-out;
+}
+
+.cart-login .order {
+  border: 2px solid #4a342a;
+  background-color: #4a342a;
+  text-decoration: none;
+  color: white;
+  padding: 8px 13px;
+  font-weight: 500;
+  border-radius: 2rem;
+}
+
+.cart-login .order:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-out;
+}
+
+.cart-login .menu-bar {
+  display: none;
+  border: 2px solid #4a342a;
+  border-radius: 5px;
+  padding: 15px 3px;
+}
+
+.cart-login .menu-bar:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.6s ease-out;
+}
+
+/* sign-up form  */
+.signup-back {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  color: #b26c4b;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.signup-box {
+  background-color: beige;
+  padding: 20px;
+  width: 25%;
+  border-radius: 20px;
+  margin: 20% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 25px;
+  color: rgb(112, 46, 46);
+}
+
+.signup-title .close-btn:hover {
+  cursor: pointer;
+}
+
+.signup-box form input {
+  margin: 10px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: #4a342a 1px solid;
+}
+
+.signup-box form input:focus {
+  outline: none;
+}
+
+.signup-box form button {
+  padding: 8px 10px;
+  background-color: rgb(112, 46, 46);
+  color: beige;
+  border: none;
+  border-radius: 5px;
+}
+
+.signup-box form button:hover {
+  cursor: pointer;
+}
+.signup-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* media queries for tablet */
+@media screen and (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+
+  .cart-login .menu-bar {
+    display: flex;
+  }
+
+  .signup-box {
+    width: 35%;
+    font-size: 20px;
+    margin: 30% auto;
+  }
+}
+
+/* media queries for mobile */
+@media screen and (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+
+  .nav-container img {
+    width: 250px;
+  }
+  .sign,
+  .order {
+    display: none;
+  }
+
+  .signup-box {
+    width: 90%;
+    font-size: 20px;
+    margin: 260px auto;
+  }
+}
+
+/* side-bar  */
+
+.side-bar {
+  z-index: 1000;
+}
+
+.side-menu {
+  background-color: #4a342a;
+  width: 65%;
+  height: 80vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding-top: 20px;
+  transition: right 0.9s ease;
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.side-menu .signin-side {
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  font-weight: 500;
+  border-radius: 2rem;
+}
+
+.side-menu .order-side {
+  border: 2px solid white;
+  background-color: white;
+  text-decoration: none;
+  color: rgb(74, 52, 42);
+  padding: 8px 10px;
+  font-weight: 500;
+  border-radius: 2rem;
+}
+
+#x-mark {
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+#x-mark:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.6s ease-out;
+}
+
+/* media queries for tablet */
+@media screen and (max-width: 1024px) {
+  .side-menu .signin-side,
+  .side-menu .order-side {
+    display: none;
+  }
+}
+
+/* media queries for tablet */
+@media screen and (max-width: 700px) {
+  .side-menu .signin-side,
+  .side-menu .order-side {
+    display: block;
+  }
+}
+.Header{
+    /* margin: 50px auto; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFE3D5;
+    padding: 80px 20px;        
+}
+.Header h1{
+    max-width: 700px;
+    font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+     
+}
+.Header p{
+    line-height: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: "Momo Signature", cursive;
+}
+.sec_two{
+      text-align: center;
+      /* margin: 50px auto; */
+      padding: 80px 50px;
+      background-color: #F7F1E9;
+      
+}
+.sec_two_one{
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 60px 80px;
+   
+}
+.member_card{
+    /* display: flex; */
+    text-align: center;
+}
+.member_card h1{
+     letter-spacing: 1px;
+      margin-top: 16px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#image{
+     height: 200px;
+     width: 200px;
+     border-radius: 500px;
+     border: 6px solid #f1ebe4;
+     object-fit: cover;
+    transition: transform 0.4s ease;
+}
+#image:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}
+.highlight{
+   font-weight: 600;
+    font-size: 18px;
+}
+.bio{
+    max-width: 800px;
+    padding: 20px 34px;
+    border: 1.5px solid #2b2b2b;
+    background-color: #fdf9f4;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+.bio p {
+    margin-top: 5px;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .aboutus {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .bio {
+        box-shadow: none;
+    }
+}
+.footer {
+  background-color: #3b2a22;  
+  color: #f7f1e9;             
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.footer p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
