@@ -12,6 +12,9 @@ var submit = document.querySelector(".submit")
 submit.addEventListener("click", function () {
   event.preventDefault()
 
+  let isValid = true;
+
+
   var Regexname = /^[A-Za-z]+$/
   var Regexemail = /^[a-zA-Z0-9]+@gmail\.com$/
   var Regexphone = /^\d{10}$/
@@ -28,18 +31,21 @@ submit.addEventListener("click", function () {
 
   if (Regexname.test(name.value) == false) {
     document.querySelector(".nameerror").style.display = "inline"
+    isValid = false;
   }
   else {
     document.querySelector(".nameerror").style.display = "none"
   }
   if (Regexemail.test(email.value) == false) {
     document.querySelector(".emailerror").style.display = "inline"
+    isValid = false;
   }
   else {
     document.querySelector(".emailerror").style.display = "none"
   }
   if (Regexphone.test(phone.value) == false) {
     document.querySelector(".phoneerror").style.display = "inline"
+    isValid = false;
   }
   else {
     document.querySelector(".phoneerror").style.display = "none"
@@ -47,8 +53,9 @@ submit.addEventListener("click", function () {
 
   const length = textarea.value.length;
 
-  if (length > maxLength == true) {
+  if (length > maxLength) {
     error.style.display = "inline"
+    isValid = false;
   }
   else {
     error.style.display = "none"
@@ -58,5 +65,8 @@ submit.addEventListener("click", function () {
     count.innerHTML = textarea.value.length + "/200 characters";
   });
 
+  if (isValid) {
+    alert("Form submitted successfully ✅");
+  }
 
 })
