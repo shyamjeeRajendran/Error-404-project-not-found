@@ -480,9 +480,16 @@ body {
 
   .prev,
   .next {
-    opacity: 15%;
+    opacity: 50%;
     background-color: transparent;
   }
+
+  .prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
 
   .prev:hover,
   .next:hover {
